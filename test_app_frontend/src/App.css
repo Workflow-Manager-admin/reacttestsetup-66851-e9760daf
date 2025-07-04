@@ -1,0 +1,54 @@
+/* Root theme variables (palette will override JS) */
+:root {
+  --primary: #1976d2;
+  --secondary: #424242;
+  --accent: #ff4081;
+  --bg-primary: #fff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #222834;
+  --text-secondary: #757575;
+  --border-color: #e9ecef;
+}
+
+body, .App {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+/* For flexible layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--primary);
+  font-family: inherit;
+  margin-bottom: 0.7em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+/* Utility for responsive padding/margins - can be refined */
+@media (max-width: 600px) {
+  section {
+    margin-bottom: 1em;
+  }
+}
+

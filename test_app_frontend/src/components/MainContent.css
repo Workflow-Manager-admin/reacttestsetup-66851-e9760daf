@@ -1,0 +1,23 @@
+.main-content {
+  flex: 1;
+  padding: 2.5rem 2vw 2.5rem 2vw;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-primary, #fff);
+  color: var(--text-primary, #282c34);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    padding: 1.2rem 2vw;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    padding: 0.6rem 2vw;
+  }
+}
